@@ -20,10 +20,11 @@ section {
 .first-page {
     padding-left: 120px;
     position: relative;
+    flex-wrap: wrap;
 
 }
 .first-page h1{
-    width: 740px;
+    width: calc(38vw + 192.4px);
     font-size: 80px;
     font-weight: 700;
     line-height: 120%;
@@ -32,7 +33,7 @@ section {
     top: 87px;
 }
 .left_side p{
-    width: 514px;
+    width: calc(19.8vw + 228.7px);
     font-size: 32px;
     font-weight: 600;
     line-height: 42px;
@@ -58,9 +59,9 @@ section {
     position: absolute;
     top: 588px;
     left: 416px;
-    width: 175px;
+    width: calc(6.29vw + 83.8px);
     height: 56px;
-    padding: 16px 32px;
+    padding: calc(0.75vw + 5.1px) calc(1.5vw + 10.3px);
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -68,24 +69,14 @@ section {
     background: #1D1E25;
     color: var(--neutral-10, #FFF);
 }
-.bg {
-    width: 197px;
-    height: 197px;
-    border-radius: 50%;
-    background: #FA7515;
-    filter: blur(110px);
-    opacity: 0.13;
+.bg_bg_orange {
+    position: inherit;
 }
+
 .right_side img{
     position: absolute;
     top: 105px;
     right: 53px;
-}
-.bg-green {
-    background: #E2F8F0;
-}
-.bg-green__mob {
-    background: #E2F8F0;
 }
 /* навигация_начало */
 .nav {
@@ -145,19 +136,20 @@ section {
     padding: 100px 120px;
 }
 .solve h2{
+    width: calc(45.16vw + 165.6px);
     color: var(--neutral-10, #FFF);
     font-size: 56px;
+    font-style: normal;
     font-weight: 600;
     line-height: 120%; 
     letter-spacing: -2px;
-    width: 816px;
 }
 .solve p{
     color: var(--neutral-60, #7E8492);
     font-size: 18px;
     font-weight: 500;
     line-height: 150%; 
-    width: 660px;
+    width: calc(30.4vw + 221.9px);
     margin-top: 24px;
 }
 .Coca_help h4{
@@ -209,8 +201,8 @@ section {
 
 
 .company_Revenue h3{
-    width: 560px;
-    font-size: 56px;
+    width: calc(20.8vw + 144.1px);
+    font-size: calc(3vw + 12.73px);
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -2px;
@@ -237,38 +229,41 @@ section {
 }
 
 
-
 .Lift_biznes{
     padding: 66px 120px 160px 120px;
 }
 
 .lift_your_biznes{
     display: flex;
-    width: 1150px;
-    height: 159px;
+    flex-wrap: wrap;
     gap: 144px;
 }
 .Lift_biznes img{
-    width: 1200px;
-    height: 536px;
+    width: calc(81.2vw + 30.4px);
     margin-top: 80px;
     margin-bottom: 80px;
 }
 .lift_your_biznes h2{
-    font-size: 64px;
+    font-size: calc(3vw + 20.7px);
     font-weight: 600;
     line-height: 120%;
+    border-right: 2px solid #CED1D8;
+    height: 99px;
+}
+.lift_your_biznes:nth-child(4n){
+    border: none;
 }
 .lift_your_biznes p{
-    width: 199px;
+    width: calc(1.5vw + 154.3px);
     color: var(--neutral-60, #7E8492);
-    font-size: 18px;
+    font-size: calc(0.18vw + 15.2px);
     font-weight: 500;
     line-height: 32px;
 }
 .your_bisiness{
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;    
 }
 .your_bisiness h3{
     font-size: 56px;
@@ -286,15 +281,16 @@ section {
     margin-left: 24px;
     color: var(--neutral-60, #7E8492);
 }
-
 /* экран3 конец */
 /* экран 5 начало */
 .logo_Clouds{
     display: flex;
     padding: 64px 165px;
+    flex-wrap: wrap;
 }
 .Row_Clouds{
     margin-left: 30px;
+    gap: 30px;
 }
 .Row1{
     display: flex;
@@ -332,18 +328,68 @@ section {
 }
 /* экран 5 конец */
 
-
 .Frames{
     margin-top: 80px;
+    gap: 56px 64px;
+    flex-wrap: wrap;
 }
 .frames_content1{
     display: flex;
     gap: 64px;
+    
 }
-
 .frames_content2{
     display: flex;
     gap: 64px;
+}
+.frame1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.frame_1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.frame2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+.frame_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.frame3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+.frame_3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.frame4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+.frame_4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 }
 .content_analyze{
     width: 1200px;
@@ -491,9 +537,14 @@ section {
     right: calc(82.8vw + 12.4px);
 }
 /* экран 9 начало */
+
 .Footer{
     position: relative;
     padding: 160px 120px;
+}
+.el125 img{
+    position: absolute;
+    left: 74px;
 }
 .footer_try button{
     position: absolute;
@@ -505,14 +556,19 @@ section {
     background: #1D1E25;
     color: var(--neutral-10, #FFF);
 }
+.line_footer{
+    position: absolute;
+    top: 241;
+    left: 120px;
+}
 .Footer h3{
     width: 720px;
     font-size: 64px;
     font-weight: 600;
     line-height: 120%;
     position: absolute;
-    top: calc(5.72vw + 29.5px);
-    left: calc(9.38vw + 15.2px);
+    top: 112px;
+    left: 120px;
 }
 .Footer p{
     width: 543px;
@@ -520,10 +576,9 @@ section {
     font-weight: 600;
     line-height: 34px;
     position: absolute;
-    top: calc(10.5vw + 69.5px);
-    left: calc(4.31vw + 46.8px);
+    top: 221px;
+    left: 220px;
 }
-
 
 /* About_Us */
 
@@ -676,6 +731,7 @@ section {
     padding: 120px 160px;
 }
 .solvers_heding h3{
+    gap: 24px;
     width: 903px;
     font-size: 56px;
     font-weight: 600;
@@ -700,11 +756,19 @@ section {
     font-size: 24px;
     font-weight: 600;
     line-height: 150%; 
+    width: 174px;
+}
+.info_user_text p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    width: 174px;
 }
 .user_profile{
-width: 380px;
-gap: 16px;
-
+    display: flex;
+    margin-top: 80px;
+    width: 380px;
+    gap: 32px;
 }
 .User_info{
     display: flex;
@@ -712,7 +776,81 @@ gap: 16px;
     justify-content: space-between;
     align-items: flex-start;
 }
+.Arlyne-Stefano{
+    width: 379px;
+}
 .info_user_icon{
-    
+    display: flex;
+    flex-direction: row;
+}
+.Master_touch h4{
+    width: 626px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;
+}
+.Master_touch {
+    display: flex;
+    flex-direction: row;
+    gap: 71px;
+}
+.master_touch h6{
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
+
+/*  */
+.Footerr_End{
+    padding: 120px 160px;
+    background: var(--neutral-100, #1D1E25);
+}
+.Footerr_End{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer_end{
+    display: flex;
+    flex-direction: row;
+}
+.Footer_end h3{
+    width: 720px;
+    color: var(--neutral-10, #FFF);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.Footer_end p{
+    width: 543px;
+    color: var(--neutral-50, #AFB3BB);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.footer_bt button{
+    display: flex;
+    width: 177px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--neutral-10, #FFF);
+}
+.Footer_end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+/* end */
+.Think_beyond{
+    padding: 120px 160px;
+    background: var(--neutral-100, #1D1E25);
+}
